@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+<meta name="b" content="width=device-width, initial-scale=1">
+<style>
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+body {
+        background: #243aff;
+        background: -webkit-linear-gradient(to right, #fcff49, #243aff);
+        background: linear-gradient(to right, #fcff49, #243aff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+</style>
+</head>
+
+<body>
+    <br>
+    <h1 style="text-align:center">{{text}}</h2>
+    <br>
+    <img src="https://i.iplsc.com/witalij-i-wolodymyr-kliczko/000EMJ0K4SMUEG1V-C122-F4.jpg" alt="Kliczko brothers" style="width:40%;">
+    <br>
+    <h4 style="text-align:center">{{text2}}</h3>
+    <br>
+    <br>
+    <img src="data:image/png;base64,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" alt="Obrazek1" style="width:20%;">
+    <br>
+</body>
+
+</html>
