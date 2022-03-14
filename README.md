@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Flaga
 
 W tym repozytorium znajduje się tutaj cały kod do zainstalowania na serwerze aby przygotować się do zajęć, przygotować zdobyty serwer i postawić na nim stronę internetową z Twoją flagą.
@@ -114,3 +115,7 @@ Pobaw się flagą, zmień coś (zobacz etap 8 w tym pliku) lub idź dalej.
 
 Zawisło już ponad 750 flag. Zobacz je na:
 https://zajecia-programowania-xd.pl/flagi
+=======
+# flag
+Simple Flask "flag" application 
+>>>>>>> main
