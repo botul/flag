@@ -52,6 +52,12 @@ posts = [
         'author': 'Botul',
         'title': 'Wpis w blogu',
         'content': 'Taki sobie wpis w blogu',
+        'date_posted': '15 marca 2022'
+    },
+    {
+        'author': 'Botul',
+        'title': 'Drugi wpis',
+        'content': 'Taki sobie wpis w blogu',
         'date_posted': '17 marca 2022'
     }
         ]
