@@ -19,18 +19,18 @@ def ua():
     text2 = "Jesteśmy z Wami!"
     return render_template("ua.html", text=text, text2=text2)
 
-@app.route('/brudnopis')
-def brudnopis():
-    name = "Kłapouchy"
-    super_heroes = ['Sowa', 'Tygrysek', 'Kubuś']
-    chosen_hero = random.choice( super_heroes)
-    hero = character(name)
-    return render_template("brudnopis.html", hero=hero, super_heroes=super_heroes)
+# @app.route('/brudnopis')
+# def brudnopis():
+#     name = "Kłapouchy"
+#     super_heroes = ['Sowa', 'Tygrysek', 'Kubuś']
+#     chosen_hero = random.choice( super_heroes)
+#     hero = character(name)
+#     return render_template("brudnopis.html", hero=hero, super_heroes=super_heroes)
 
-@app.route('/heroes')
-def heroes():
-    super_heroes = ['Skiba', 'Queen', 'The Prodigy']
-    content_list = []
+# @app.route('/heroes')
+# def heroes():
+#     super_heroes = ['Skiba', 'Queen', 'The Prodigy']
+#     content_list = []
     # for i in range(3):
     #     interesting_character = choice(super_heroes)
     #     interesting_character_index = super_heroes.index(interesting_character)
