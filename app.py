@@ -13,6 +13,7 @@ def index():
 @app.route('/heroes')
 def heroes():
     super_heroes = ['Krzysztof Skiba', 'Queen', 'The Prodigy']
+    page_content = []
     for i in range(3):
         interesting_character = random.choice(super_heroes)
         character_index = super_heroes.index(interesting_character)
@@ -24,8 +25,9 @@ def heroes():
         word_list_len = len(word_list)
 
         content = [interesting_character, character_desc, word_list_len]
+        page_content.append(content)
 
-    return render_template("hero.html", super_heroes=super_heroes)
+    return render_template("hero.html", page_content=page_content)
 
 posts = [
     {
