@@ -1,20 +1,8 @@
-<!DOCTYPE>
-<html>
-<head>
-</head>
-
-<body>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <p style="text-align:center">{{ hero }}</p>
+{% extends "layout.html" %}
+{% block content %}
     {% for a, b,c  in page_content %}
         <h2>{{ a }}</h2>
         <p>{{ b }}</p>
         <p>{{ c }}</p>
     {% endfor %}
-</body>
-
-</html>
+{% endblock %}
