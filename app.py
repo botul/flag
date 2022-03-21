@@ -1,5 +1,5 @@
 from unicodedata import name
-from flask import Flask, render_template
+from flask import Flask, render_template, url_for
 from my_apps.wiki_character import character
 import random
 app=Flask(__name__)
