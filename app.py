@@ -27,25 +27,24 @@ def ua():
 #     hero = character(name)
 #     return render_template("brudnopis.html", hero=hero, super_heroes=super_heroes)
 
-# @app.route('/heroes')
-# def heroes():
-#     super_heroes = ['Skiba', 'Queen', 'The Prodigy']
-#     content_list = []
-    # for i in range(3):
-    #     interesting_character = choice(super_heroes)
-    #     interesting_character_index = super_heroes.index(interesting_character)
-    #     super_heroes.pop(interesting_character_index)
+@app.route('/heroes')
+def heroes():
+    super_heroes = ['Skiba', 'Queen', 'The Prodigy']
+    for i in range(3):
+        interesting_character = random.choice(super_heroes)
+        interesting_character_index = super_heroes.index(interesting_character)
+        super_heroes.pop(interesting_character_index)
 
-    #     character_desc = character(super_heroes)
+        character_desc = character(super_heroes)
 
-    #     word_list = character_desc.split(' ')
-    #     word_list_len = len(word_list)
+        word_list = character_desc.split(' ')
+        word_list_len = len(word_list)
 
-    #     content = [interesting_character, character_desc, word_list_len]
+        content = [interesting_character, character_desc, word_list_len]
 
-    # chosen_hero = random.choice( super_heroes)
-    # hero = character(name)
-    # return render_template("brudnopis.html", hero=hero, super_heroes=super_heroes)
+    chosen_hero = random.choice( super_heroes)
+    hero = character(name)
+    return render_template("hero.html", hero=hero, super_heroes=super_heroes)
 
 posts = [
     {
