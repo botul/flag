@@ -12,7 +12,19 @@ def index():
 
 @app.route('/heroes')
 def heroes():
-    super_heroes = ['Krzysztof Skiba', 'Queen', 'The Prodigy']
+    super_heroes = [
+        'Steve Jobs', 
+        'Steve Wozniak', 
+        'Bill Gates',
+        'John Carmack',
+        'Kevin Mitnick',
+        'Ian Murdock',
+        'Richard Stallman',
+        'Clifford Stoll',
+        'Hans Reiser',
+        'Linus Torvalds',
+        'Michał Zalewski',
+        ]
     page_content = []
     for i in range(3):
         interesting_character = random.choice(super_heroes)
